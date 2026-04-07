@@ -1,4 +1,5 @@
 import Image from "next/image";
+import InterestForm from "./components/InterestForm";
 
 export default function Home() {
   return (
@@ -29,12 +30,7 @@ export default function Home() {
           <p className="mt-4 text-base font-semibold uppercase tracking-wider text-zinc-100 [text-shadow:0_1px_3px_rgba(0,0,0,0.9),0_2px_6px_rgba(0,0,0,0.6)]">
             Coming Soon to Manila at Select Locations.
           </p>
-          <a
-            href="#"
-            className="mt-10 inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-lg font-semibold text-zinc-900 transition-colors hover:bg-zinc-100"
-          >
-            Get Notified
-          </a>
+          <InterestForm />
         </div>
       </main>
     </div>
