@@ -1,9 +1,10 @@
 import Image from "next/image";
 import InterestForm from "./components/InterestForm";
+import SiteFooter from "./components/SiteFooter";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen items-center justify-center font-sans">
+    <div className="relative flex min-h-screen flex-col font-sans">
       <Image
         src="/landingpage1.png"
         alt=""
@@ -12,7 +13,7 @@ export default function Home() {
         className="object-cover"
       />
       <div className="absolute inset-0 bg-black/10" aria-hidden />
-      <main className="relative z-10 flex w-full max-w-xl items-center justify-center px-6 py-24">
+      <main className="relative z-10 flex flex-1 w-full max-w-xl mx-auto items-center justify-center px-6 py-16">
         <div className="w-full rounded-2xl bg-white/5 px-8 py-12 text-center backdrop-blur-sm sm:px-12 sm:py-14">
           <Image
             src="/car_logo.png"
@@ -33,6 +34,7 @@ export default function Home() {
           <InterestForm />
         </div>
       </main>
+      <SiteFooter variant="overlay" />
     </div>
   );
 }
